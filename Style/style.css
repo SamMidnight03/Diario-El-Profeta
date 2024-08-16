@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Gideon+Roman&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url(./img/Fondo.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/*Encabezado*/
+
+header{
+    font-family: "Gideon Roman", serif;
+    text-align: center;
+}
+
+h1{
+    padding: 10px;
+    font-size: 12vw;
+    font-weight: bold;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header img{
+    max-width: 100px;
+    width: 12vw;
+    height: 90%;
+}
+
+nav{
+    border-top: 2px solid black ;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+/* Cuerpo del periodico */
+
+main{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
+
+/*secciones*/
+
+section{
+    border: 1px solid black ;
+    border-bottom: none ;
+    border-top: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+
+    
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.title{
+    font-family: "Gideon Roman", serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.text{
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+}
+
+/*Imagenes de las columnas*/
+section img{
+    width: 100%;
+
+    padding: 5px;
+    border-radius: 15px;
+    filter: grayscale(70%);
+}
